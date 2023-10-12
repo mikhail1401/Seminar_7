@@ -85,12 +85,9 @@ for (int row = 0; row < matrix1.GetLength(0); row++)
 {
     for (int column = 0; column < matrix1.GetLength(1); column++)
     {
-        if (row>0 && column>0)
+        if ((row+1)%2==0 && (column+1)%2==0)
         {
-            if (row%2==0 && column%2==0)
-            {
-                matrix1[row, column] = matrix1[row, column] * matrix1[row, column];
-            }
+            matrix1[row, column] = matrix1[row, column] * matrix1[row, column];
         }
         Console.Write(matrix1[row, column] + " ");
     }
