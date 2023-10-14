@@ -117,8 +117,11 @@ for (int row=0; row<matrix51.GetLength(0); row++)
 {
     for (int column=0; column<matrix51.GetLength(1); column++)
     {
-        matrix51[row, column] = new Random().Next(0;10);
-        Console.Write(matrix51 + " ");
+        matrix51[row, column] = new Random().Next(0, 10);
+        Console.Write(matrix51[row, column] + " ");
+        if(row==column) sum+=matrix51[row, column];
     }
     Console.WriteLine();
 }   
+
+Console.WriteLine(sum);
