@@ -93,3 +93,32 @@ for (int row = 0; row < matrix1.GetLength(0); row++)
     }
     Console.WriteLine();
 }
+
+
+Console.WriteLine("\nTask 51");
+// Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Сумма элементов главной диагонали: 1+9+2 = 12
+
+Console.Write("Type a rows number: ");
+int rows51 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter a columns number: ");
+int columns51 = Convert.ToInt32(Console.ReadLine());
+
+int[,] matrix51 = new int [rows51, columns51];
+
+int sum = 0;
+
+for (int row=0; row<matrix51.GetLength(0); row++)
+{
+    for (int column=0; column<matrix51.GetLength(1); column++)
+    {
+        matrix51[row, column] = new Random().Next(0;10);
+        Console.Write(matrix51 + " ");
+    }
+    Console.WriteLine();
+}   
